@@ -26,6 +26,7 @@ function startWorker() {
 function stopWorker() { 
     w.terminate();
     w = undefined;
+    document.getElementById("result").innerHTML = "";
 }
 </script>
 
