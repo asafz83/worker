@@ -1,9 +1,11 @@
 var i = 0;
 
 function timedCount() {
-   	i = i + 1;
-    postMessage(i);
-	setTimeout(timedCount,500);
+    var date = new Date();
+   // var str = "";
+    var str = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+    postMessage(str);
+    setTimeout(timedCount,1000);
 }
 
 
