@@ -1,4 +1,3 @@
-var i = 0;
 
 function timedCount() {
     var date = new Date();
